@@ -1,9 +1,7 @@
 language: python
 
-before_script: # configure a headless display to test plot generation
-- "export DISPLAY=:99.0"
-- "sh -e /etc/init.d/xvfb start"
-- sleep 3 # give xvfb some time to start
+virtualenv:
+    system_site_packages: true
 
 script:
   - python test.py # or py.test for Python versions 3.5 and below
