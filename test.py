@@ -61,12 +61,12 @@ def main():
 
     if (odin == list4): 
         print('одинаковые')
-        return 0
+        return True
     else: 
         print('разные')
-        return 1
+        return False
 
-  
+    return False
 
 
 
