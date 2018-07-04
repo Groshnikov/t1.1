@@ -23,7 +23,7 @@ def func():
     b = float(b)
     c = float(c)
     x = rangex()
-    y = 2 * a * numpy.log(((x)/(b + (c * x))))
+    y = a * numpy.log(((x)/(b + (c * x))))
     return y
 
 
