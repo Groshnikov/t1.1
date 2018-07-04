@@ -6,7 +6,7 @@ Created on Wed Jul  4 13:15:44 2018
 @author: Dmitry
 """
 
-#import matplotlib.pyplot as pypl
+import matplotlib.pyplot as pypl
 import numpy
 import math
 
@@ -33,10 +33,10 @@ def main():
     x = rangex()
     yer = func()
     
-    #pypl.plot(x, yer)
-    #pypl.xlabel(r"$x$")
-    #pypl.ylabel(r'$y$')
-    #pypl.title(r"$a * ln(x/(c * x + b)$")
+    pypl.plot(x, yer)
+    pypl.xlabel(r"$x$")
+    pypl.ylabel(r'$y$')
+    pypl.title(r"$a * ln(x/(c * x + b)$")
     return yer
 
 
