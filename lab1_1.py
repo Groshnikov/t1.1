@@ -17,7 +17,7 @@ def number():
     return 1
 
 def func():
-    with open("/Users/Dmitry/t1.1/ee.txt") as dataFile:
+    with open("ee.txt") as dataFile:
         a, b, c = dataFile.readline().split("\t")
     a = float(a)
     b = float(b)
