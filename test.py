@@ -61,13 +61,11 @@ def main():
 
     if (odin == list4): 
         print('одинаковые')
-        return True
+        
     else: 
         print('разные')
-        raise ValueError('oops!')
-        return False
-
-    return False
+        raise ValueError('Графики разные!')
+        
 
 
 
