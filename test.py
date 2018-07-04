@@ -16,14 +16,14 @@ def main():
     #e = [2,3,4,5,9,11,12,13,14]
     numb = lab1_1.number()
     if (numb in e):
-        with open("/Users/Dmitry/t1.1/ee.txt") as dataFile:
+        with open("ee.txt") as dataFile:
             a, b, c = dataFile.readline().split("\t")
         a = float(a)
         b = float(b)
         c = float(c)
         
     else:
-        with open("/Users/Dmitry/t1.1/ee.txt") as dataFile:
+        with open("ee.txt") as dataFile:
             a, b, c, d = dataFile.readline().split("\t")
         a = float(a)
         b = float(b)
@@ -32,7 +32,7 @@ def main():
         
     
     numb -= 1
-    f = open('/Users/Dmitry/t1.1/var.txt')
+    f = open('var.txt')
     line = f.readlines()
     dger = (line[numb]) 
 
