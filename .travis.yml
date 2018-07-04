@@ -1,7 +1,17 @@
 language: python
 
-virtualenv:
-    system_site_packages: true
+
+# Database services needed by the project
+services: postgresql
+
+before_script:
+  - psql -c "CREATE DATABASE travisci;" -U postgres
+  # Updating the packages and installing what I need for the build and test process
+  - sudo apt-get update
+  - sudo apt-get install matplotlib
 
 script:
   - python test.py # or py.test for Python versions 3.5 and below
+
+after_success:
+  - coveralls
