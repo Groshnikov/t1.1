@@ -16,14 +16,14 @@ def main():
     #e = [2,3,4,5,9,11,12,13,14]
     numb = lab1_1.number()
     if (numb in e):
-        with open("ee.txt") as dataFile:
+        with open("data.tsv") as dataFile:
             a, b, c = dataFile.readline().split("\t")
         a = float(a)
         b = float(b)
         c = float(c)
         
     else:
-        with open("ee.txt") as dataFile:
+        with open("data.tsv") as dataFile:
             a, b, c, d = dataFile.readline().split("\t")
         a = float(a)
         b = float(b)
