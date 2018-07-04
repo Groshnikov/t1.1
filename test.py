@@ -64,6 +64,7 @@ def main():
         return True
     else: 
         print('разные')
+        raise ValueError('oops!')
         return False
 
     return False
