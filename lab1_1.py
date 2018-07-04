@@ -5,7 +5,8 @@ Created on Wed Jul  4 13:15:44 2018
 
 @author: Dmitry
 """
-
+import matplotlib
+matplotlib.use('qt5agg')
 import matplotlib.pyplot as pypl
 import numpy
 import math
